@@ -1,9 +1,9 @@
 import insertfly_legs_class as i
 
 
-housefly = i.insect()
+housefly = i.insect(2,4)
 
-mosquito = i.insect()
+mosquito = i.insect(6,8)
 
 housefly.flight_length()
 
