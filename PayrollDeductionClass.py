@@ -2,8 +2,8 @@ class payrolldeduction:
     def __init__(self, description, date, chargeamount, employeeid):
         self._description=description
         self._date=date
-        self.chargeamount=chargeamount
-        self.employeeid=employeeid
+        self._chargeamount=chargeamount
+        self._employeeid=employeeid
     
     def set_description(self, description):
         self._description=description
