@@ -10,13 +10,14 @@ def main():
     desc3=pdc.payrolldeduction('food court','8/17/2022',15.25,21547)
     desc4=pdc.payrolldeduction('Vending Machine','8/22/2022',3.00,58475)
     desc5=pdc.payrolldeduction('Vending Machine','8/5/2022',2.75,58475)
+    
     final=int(desc2.get_chargeamount()) + int(desc4.get_chargeamount()) + int(desc5.get_chargeamount())
 
     print("*** Employee Pay ***")
     print("Name:", name.get_name())
     print("ID Number:", name.get_idnumber())
     print("Department:", name.get_department())
-    print("Gross Pay: $", name.get_monthlysalary())
-    print("Net Pay: $", name.get_monthlysalary()-final)
+    print("Gross Pay: $", f'{name.get_monthlysalary():,.2f}')
+    print("Net Pay: $", f'{name.get_monthlysalary()-final:,.2f}')
 
 main()
