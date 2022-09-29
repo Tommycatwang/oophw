@@ -11,7 +11,12 @@ def main():
     desc4=pdc.payrolldeduction('Vending Machine','8/22/2022',3.00,58475)
     desc5=pdc.payrolldeduction('Vending Machine','8/5/2022',2.75,58475)
     
-    final=int(desc2.get_chargeamount()) + int(desc4.get_chargeamount()) + int(desc5.get_chargeamount())
+    letgroup=[desc1,desc2,desc3,desc4,desc5]
+    #final=int(desc2.get_chargeamount()) + int(desc4.get_chargeamount()) + int(desc5.get_chargeamount())
+    final=0
+    for thing in letgroup:
+        if name.get_idnumber() == thing.get_employeeid():
+            final+=thing.get_chargeamount()
 
     print("*** Employee Pay ***")
     print("Name:", name.get_name())
