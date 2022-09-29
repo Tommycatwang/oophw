@@ -22,7 +22,7 @@ def main():
     print("Name:", name.get_name())
     print("ID Number:", name.get_idnumber())
     print("Department:", name.get_department())
-    print("Gross Pay: $", f'{name.get_monthlysalary():,.2f}')
-    print("Net Pay: $", f'{name.get_monthlysalary()-final:,.2f}')
+    print("Gross Pay: $", f'{name.get_monthlysalary():,.2f}',sep='')
+    print("Net Pay: $", f'{name.get_monthlysalary()-final:,.2f}',sep='')
 
 main()
